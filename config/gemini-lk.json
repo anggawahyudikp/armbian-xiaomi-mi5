@@ -1,0 +1,12 @@
+{
+  "name": "gemini-stock-lk-41b215d8",
+  "device": "gemini",
+  "aboot_sha256": "41b215d8606e2d0e7a19dedf503432d7d152b6819fe9623eb35bfca78767b825",
+  "ddr_base": 2147483648,
+  "kernel_address": 2148007936,
+  "dtb_address": 2189426688,
+  "ramdisk_address": 2191523840,
+  "real_kernel_address": 2149580800,
+  "page_size": 4096,
+  "evidence": "Read-only aboot snapshot; ARM function 0x92a3957c executed under Unicorn with observed DDR base; see docs/bootloader-memory-2026-10-29.md"
+}

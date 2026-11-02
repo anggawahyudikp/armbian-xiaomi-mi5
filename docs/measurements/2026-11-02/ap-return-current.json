@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "Controlled AP outage/return on the current runtime over Wi-Fi, with automatic rollback",
+  "started_at": "2026-11-02T08:38:20.921440+00:00",
+  "finished_at": "2026-11-02T08:40:10.389566+00:00",
+  "outage_http_failed": true,
+  "recovery_seconds": 10.01406277299975,
+  "automatic_ap_return": true,
+  "boot_unchanged": true,
+  "application_data_retained": true,
+  "production_restored": true,
+  "host_forwarding_restored": true,
+  "host_default_route_preserved": true,
+  "outage_seconds": 35,
+  "physical_reset_required": false,
+  "source_sha256": "414c50dedc7229fe85711f3674171490ff1b459d0621c824eb0d11e056a31167",
+  "full_24h_passed": false,
+  "final_cleanup_verified": true,
+  "temporary_wifi_profile_removed": true,
+  "staged_test_credentials_removed": true,
+  "cleanup_observer_corrections": "Initial comparison included non-Wi-Fi profiles; corrected to Wi-Fi only. Already unloaded transient timers are treated as absent. Original observer failures retained privately."
+}

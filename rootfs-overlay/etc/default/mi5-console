@@ -1,0 +1,3 @@
+# LCD only. Armbian, Docker and networking keep running while the LCD sleeps.
+SLEEP_SECONDS=300
+BRIGHTNESS_PERCENT=20

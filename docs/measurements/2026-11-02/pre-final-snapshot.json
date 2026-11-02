@@ -1,0 +1,13 @@
+{
+  "scope": "Configuration, app data and diagnostic snapshot; not a complete userdata image",
+  "sha256": "12b451a4f5347d4e9c72f0861b84b7340b4a1afc9a33669178ce0b470f1a67f5",
+  "bytes": 1987913,
+  "captured_at": "2026-11-02T08:47:36.807325+00:00",
+  "application_stopped_at_capture": true,
+  "qualification_recorders_stopped": true,
+  "source_and_copy_sha256_match": true,
+  "archive_member_count": 243,
+  "application_resumed_after_capture": true,
+  "refresh_before_final_wipe": true,
+  "full_userdata_restore_tested": false
+}

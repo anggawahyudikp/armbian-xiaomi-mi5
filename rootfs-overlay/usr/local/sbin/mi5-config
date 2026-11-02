@@ -1,0 +1,91 @@
+#!/usr/bin/python3
+"""Mi 5 configuration: LCD, USB management, Wi-Fi and system status."""
+import argparse
+import json
+import os
+from pathlib import Path
+import subprocess
+import sys
+
+sys.path.insert(0, '/usr/local/lib/mi5')
+import console
+import usb_gadget
+
+
+def command(*args):
+    subprocess.run(args, check=True)
+
+
+def root():
+    if os.geteuid() != 0:
+        os.execvp('sudo', ['sudo', sys.argv[0], *sys.argv[1:]])
+
+
+def save(path, values):
+    temporary = path.with_name(path.name + '.tmp')
+    temporary.write_text(''.join(f'{key}={value}\n' for key, value in values.items()))
+    temporary.chmod(0o644)
+    temporary.replace(path)
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest='topic')
+    display = sub.add_parser('display')
+    display.add_argument('action', choices=('status', 'wake', 'sleep', 'timeout', 'brightness'))
+    display.add_argument('value', nargs='?', type=int)
+    usb = sub.add_parser('usb')
+    usb.add_argument('action', choices=('status', 'mode'))
+    usb.add_argument('value', nargs='?', choices=('rndis', 'ncm'))
+    wifi = sub.add_parser('wifi')
+    wifi.add_argument('ssid', nargs='?')
+    sub.add_parser('status')
+    args = parser.parse_args()
+    if args.topic is None:
+        print('Armbian for Xiaomi Mi 5\n1) System status\n2) Wi-Fi\n3) LCD wake\n4) LCD sleep\n0) Exit')
+        choice = input('Choice: ').strip()
+        options = {'1': ['status'], '2': ['wifi'], '3': ['display', 'wake'], '4': ['display', 'sleep']}
+        if choice in options:
+            os.execv(sys.argv[0], [sys.argv[0], *options[choice]])
+        return
+    if args.topic == 'display':
+        if args.action in ('timeout', 'brightness'):
+            root()
+            values = console.load_config()
+            key = 'SLEEP_SECONDS' if args.action == 'timeout' else 'BRIGHTNESS_PERCENT'
+            if args.value is None:
+                parser.error('A numeric value is required')
+            minimum, maximum = (0, 86400) if key == 'SLEEP_SECONDS' else (1, 100)
+            if not minimum <= args.value <= maximum:
+                parser.error(f'Value must be {minimum}..{maximum}')
+            values[key] = args.value
+            save(console.CONFIG, values)
+            command('/usr/local/sbin/mi5-console', 'reload')
+        else:
+            if args.action != 'status':
+                root()
+            command('/usr/local/sbin/mi5-console', args.action)
+    elif args.topic == 'usb':
+        if args.action == 'mode':
+            root()
+            if args.value is None:
+                parser.error('Choose rndis or ncm')
+            values, _ = usb_gadget.settings()
+            values['MODE'] = args.value
+            save(usb_gadget.CONFIG, values)
+            command('systemctl', 'restart', 'mi5-usb-gadget.service')
+            command('systemctl', 'restart', 'mi5-usb-dhcp.service')
+        else:
+            command('/usr/local/sbin/mi5-usb-gadget', 'status')
+    elif args.topic == 'wifi':
+        root()
+        if args.ssid:
+            command('nmcli', '--ask', 'device', 'wifi', 'connect', args.ssid)
+        else:
+            command('nmtui')
+    elif args.topic == 'status':
+        command('/usr/local/sbin/mi5-doctor', '--private')
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Passive DHCP transactions for current client; no AP outage induced",
+  "complete_10_minute_window": true,
+  "elapsed_seconds": 600.226106884,
+  "requests_observed": 11,
+  "acks_observed": 11,
+  "matching_request_ack_transactions": 11,
+  "requests_without_observed_ack": 0,
+  "ack_latency_ms": {
+    "minimum": 2.5963250000131666,
+    "maximum": 36.4093740000726,
+    "median": 3.1740399999762303
+  },
+  "lease_seconds": [
+    120
+  ],
+  "renewal_seconds": [
+    53,
+    54,
+    55,
+    56
+  ],
+  "errors": [],
+  "source_sha256": "eb4c349d4d25839618893fd2060bc2d73106e004c7c4de8aaa787f883c2b45ce",
+  "ap_return_verified": false,
+  "full_24h_passed": false
+}

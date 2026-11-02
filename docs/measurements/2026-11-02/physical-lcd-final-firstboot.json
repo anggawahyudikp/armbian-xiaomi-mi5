@@ -1,0 +1,16 @@
+{
+  "scope": "Physical user confirmation and native input/backlight trace on the freshly installed getty-fix candidate; LCD code unchanged in the policy-only successor",
+  "physical_power_and_home_confirmed_by_user": true,
+  "rendered_linux_text_confirmed_by_user": true,
+  "native_observation_seconds": 300.092494968,
+  "power_presses_observed": 10,
+  "home_presses_observed": 1,
+  "backlight_values_observed": [
+    0,
+    819
+  ],
+  "local_http_failures": 0,
+  "each_reboot_physical_check_complete": false,
+  "source_sha256": "500e163b0f2f2bb4aa8a1217bcb05d5f8352bbc41a9be7834ead7ba46b9990f4",
+  "operator_confirmation": "All requested Power/Home actions worked and Linux text/login was visible."
+}

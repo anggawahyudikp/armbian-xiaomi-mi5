@@ -1,0 +1,10 @@
+[Unit]
+Description=Enumerate the Mi 5 Wi-Fi PCIe endpoint before network setup
+After=local-fs.target
+Before=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/mi5-wifi-ready
+RemainAfterExit=yes
+TimeoutStartSec=25

@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "scope": "Linux hot-switch regression on installed charger-status kernel and runtime USB corrections; successor generic first boot remains untested",
+  "kernel_release": "7.0.0-gemini-lk-clockrtc-chgstatus",
+  "modes": [
+    {
+      "mode": "ncm",
+      "host_driver": "cdc_ncm",
+      "revision": "0103",
+      "phase_elapsed_seconds": 31.08366263700009,
+      "usb_user_ssh": true,
+      "authenticated_serial": true,
+      "wifi_http": true,
+      "boot_id_unchanged": true,
+      "host_default_routes_preserved": true
+    },
+    {
+      "mode": "rndis",
+      "host_driver": "rndis_host",
+      "revision": "0102",
+      "phase_elapsed_seconds": 29.56515481400129,
+      "usb_user_ssh": true,
+      "authenticated_serial": true,
+      "wifi_http": true,
+      "boot_id_unchanged": true,
+      "host_default_routes_preserved": true
+    }
+  ],
+  "host_resolver_unchanged": true,
+  "default_rndis_restored": true,
+  "latest_battery_percent": 6,
+  "battery_floor_guard_active": true,
+  "battery_stop_marker": false,
+  "windows_retested": false,
+  "stable_qualified": false
+}

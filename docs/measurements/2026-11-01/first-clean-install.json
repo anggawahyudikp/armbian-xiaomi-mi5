@@ -1,0 +1,19 @@
+{
+  "kernel": "7.0.0-gemini-lk-clockrtc",
+  "boot_id": "f08cd247-7033-430d-a088-ffdbfc06031e",
+  "taint": 0,
+  "timestamp": "2026-11-01T21:08:17+07:00",
+  "boot_prefix_sha256": "294e1958c9bf96f69627280fbc69b34332c0df2a923f3276bb14fd8069563939",
+  "sdf_sha256": "cab536c08f6e061e080f6ae8c78cbc4c0ac66004767610c940e208fec47d322c",
+  "root_uuid": "9391c150-1d29-4cc2-86a2-56077bbc7846",
+  "battery": 75,
+  "scope": "First clean installation; USB-authentication image revision pending",
+  "firstlogin_completed": true,
+  "usb_root_ssh": true,
+  "wifi_root_ssh": true,
+  "wifi_wkp_ssh": true,
+  "failed_units": [],
+  "gpt_warning_absent": true,
+  "stable_qualified": false,
+  "source_evidence_sha256": "392c279c607c9edb219bce9bfe45c8e675299132490d4f8bef7e5b138d81e64a"
+}

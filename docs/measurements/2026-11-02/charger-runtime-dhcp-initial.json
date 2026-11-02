@@ -1,0 +1,21 @@
+{
+  "status": "running",
+  "complete_10_minute_window": false,
+  "scope": "Initial passive DHCP observation on the charger runtime; no induced outage or AP-return claim",
+  "matching_request_ack_transactions_observed": 2,
+  "pairs": [
+    {
+      "request_elapsed_seconds": 35.118802026000026,
+      "ack_latency_ms": 2.596,
+      "lease_seconds": 120,
+      "renewal_seconds": 54
+    },
+    {
+      "request_elapsed_seconds": 89.11914131900005,
+      "ack_latency_ms": 3.174,
+      "lease_seconds": 120,
+      "renewal_seconds": 55
+    }
+  ],
+  "full_24h_passed": false
+}

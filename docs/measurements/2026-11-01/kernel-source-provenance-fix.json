@@ -1,0 +1,10 @@
+{
+  "complete_patch_sha256": "143583fe39d224b8423afe97e9d7e144b335be05b14a33b5795d4d2c7d2df019",
+  "complete_patch_bytes": 125811,
+  "changed_source_paths": 20,
+  "added_source_files_included": 6,
+  "applies_to_original_commit_index": true,
+  "synthetic_reconstruction_tests_passed": 2,
+  "kernel_artifacts_modified": false,
+  "phone_modified": false
+}

@@ -1,0 +1,47 @@
+{
+  "status": "measured",
+  "started_at": "2026-11-01T00:28:10.139654+00:00",
+  "finished_at": "2026-11-01T00:29:00.607954+00:00",
+  "scope": "Three sequential 8 MiB HTTP downloads from the existing Docker application over the selected Wi-Fi and routed wired laptop; not an isolated radio benchmark",
+  "target_bytes_per_second": 10000000,
+  "target_met": false,
+  "samples": [
+    {
+      "number": 1,
+      "curl_exit": 0,
+      "http_status": 200,
+      "bytes": 8388608,
+      "seconds": 10.912833,
+      "bytes_per_second": 768692,
+      "sha256": "2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74",
+      "integrity_passed": true
+    },
+    {
+      "number": 2,
+      "curl_exit": 0,
+      "http_status": 200,
+      "bytes": 8388608,
+      "seconds": 11.43839,
+      "bytes_per_second": 733373,
+      "sha256": "2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74",
+      "integrity_passed": true
+    },
+    {
+      "number": 3,
+      "curl_exit": 0,
+      "http_status": 200,
+      "bytes": 8388608,
+      "seconds": 13.808075,
+      "bytes_per_second": 607514,
+      "sha256": "2daeb1f36095b44b318410b3f4e8b5d989dcc7bb023d1426c492dab0a3053e74",
+      "integrity_passed": true
+    }
+  ],
+  "signal_dbm": -79,
+  "channel_width_mhz": 20,
+  "frequency_mhz": 2462,
+  "source": "Existing Docker HTTP workload to a routed wired laptop",
+  "benchmark_file_removed": true,
+  "post_test_services_healthy": true,
+  "formal_24h_qualification": false
+}

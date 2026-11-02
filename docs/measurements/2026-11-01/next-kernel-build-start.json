@@ -1,0 +1,30 @@
+{
+  "scope": "Start observation of a separate complete kernel/module build; current device and qualification revision retained",
+  "status": "build_running_not_completed",
+  "observed_at": "2026-11-01T06:46:15.658907+00:00",
+  "source_commit": "028ef9c96e96197026887c0f092424679298aae8",
+  "upstream_clock_fix_commit": "7cb2d65286b817d8d7e26f454a9c374d65e87072",
+  "baseline_modified_or_added_source_files_preserved": 19,
+  "original_build_inputs_preserved": 182,
+  "protected_current_candidate_files_unchanged": 7,
+  "effective_kconfig_semantic_changes": {
+    "CONFIG_RTC_HCTOSYS_DEVICE": {
+      "before": "\"rtc0\"",
+      "after": null
+    },
+    "CONFIG_RTC_HCTOSYS": {
+      "before": "y",
+      "after": null
+    }
+  },
+  "jobs": 1,
+  "cpu_quota_percent": 100,
+  "memory_high_bytes": 1073741824,
+  "memory_max_bytes": 2147483648,
+  "localversion_suffix": "-clockrtc",
+  "kernel_build_completed": false,
+  "new_boot_image_built": false,
+  "new_candidate_installed_on_phone": false,
+  "new_candidate_hardware_verified": false,
+  "original_qualification_restarted": false
+}

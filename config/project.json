@@ -1,0 +1,8 @@
+{
+  "name": "Armbian for Xiaomi Mi 5",
+  "slug": "armbian-xiaomi-mi5",
+  "version": "0.1.0",
+  "device": "Xiaomi Mi 5",
+  "codename": "gemini",
+  "support": "community"
+}

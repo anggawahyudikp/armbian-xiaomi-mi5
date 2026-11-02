@@ -1,0 +1,13 @@
+{
+  "kernel_release": "7.0.0-gemini-lk-clockrtc",
+  "build_number": 2,
+  "ram_boot_passed": true,
+  "taint": 0,
+  "userdata_readonly": true,
+  "internal_filesystems_mounted": false,
+  "warning_trace_seen_in_full_dmesg": false,
+  "known_gpt_backup_warning_still_present_before_repair": true,
+  "full_dmesg_sha256": "c17e1aebc2feb1097d34fd2900a0eeb5f5606588e57d4c509ce9053a8af2919b",
+  "fresh_install_verified": false,
+  "journal_clock_regression_hardware_check_pending": true
+}

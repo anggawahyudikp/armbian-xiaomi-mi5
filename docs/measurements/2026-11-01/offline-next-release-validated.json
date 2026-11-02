@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-11-01T11:17:05.869695+00:00",
+  "status": "offline_release_validated_hardware_pending",
+  "kernel_release": "7.0.0-gemini-lk-clockrtc",
+  "build_input_count": 186,
+  "current_inputs_match_provenance": true,
+  "kernel_source_commit": "028ef9c96e96197026887c0f092424679298aae8",
+  "kernel_source_patch_sha256": "143583fe39d224b8423afe97e9d7e144b335be05b14a33b5795d4d2c7d2df019",
+  "complete_source_patch_paths": 20,
+  "artifact_hashes": {
+    "boot.img": "294e1958c9bf96f69627280fbc69b34332c0df2a923f3276bb14fd8069563939",
+    "boot-diagnostic.img": "ca0f50c5953373029f67cb167948e6c3f714205ac7a289817ab6ec4cd0f36f47",
+    "boot-diagnostic-usb-debug.img": "712585e1c98f897abf4fcc05fbf84fbb9bf610f8988b365baa744f0efb75143e",
+    "rootfs.ext4": "19ca0e70bc5bc02e2a167f3e90c5534b2306ef94c64d18fce478ce8fea21ec39",
+    "rootfs.img": "358d00426a46a192ec090b8cc65023ca324ac8739eabc54b14203f463725c671",
+    "armbian-xiaomi-mi5_0.1.0-preview.1_fastboot.zip": "85d2991a45dcc6541ef8fc0663c2d7482e23b62fbd1c10aa01c01c4d3f58606c",
+    "armbian-xiaomi-mi5_0.1.0-preview.1_twrp.zip": "fa2dee23527284716566d40c7a87bdb019fb68c27414a044d634acedf77e1c41",
+    "kernel.config": "65b058ee7666943b1ecbbb2c975fa8e944ab902e9b97dfb3a300ad6d69ff9abd",
+    "Image.gz": "d8923ded988c1d35a4c767c99899dd782ca92b89e5be8a589edebafece8e16d2",
+    "msm8996-xiaomi-gemini.dtb": "f14bd21e0c143b8ea3661541cb0b0ad029c3d60bc26bd9d67edbf05a53c8cb3e"
+  },
+  "offline_validation_passed": true,
+  "rootfs_checks_passed": 44,
+  "sparse_roundtrip_passed": true,
+  "release_archive_validation_passed": true,
+  "original_candidate_artifacts_unchanged": true,
+  "generic_rootfs_hardware_boot_verified": false,
+  "new_candidate_runtime_evidence_count": 0,
+  "phone_modified": false,
+  "published": false,
+  "full_24h_passed": false,
+  "unit": {
+    "MainPID": "0",
+    "Result": "timeout",
+    "ExecMainStatus": "0",
+    "ActiveState": "failed",
+    "SubState": "failed"
+  }
+}

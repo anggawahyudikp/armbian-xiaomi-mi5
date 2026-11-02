@@ -1,0 +1,65 @@
+{
+  "scope": "Final service-policy-fixed generic image, five consecutive USB reboots",
+  "root_uuid": "33169aed-27d0-46f3-b1c3-39f38e3d29a9",
+  "boot_sha256": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+  "generic_first_boot_verified": true,
+  "package_postinstall_started_docker_and_containerd": true,
+  "linux_authenticated_usb_serial_verified": true,
+  "consecutive_usb_reboots_verified": 5,
+  "required_usb_reboots": 5,
+  "physical_round1_confirmed_by_operator": true,
+  "physical_round1_native_capture_missed_action_window": true,
+  "physical_round2_confirmation_pending": false,
+  "windows_final_revision_usb_tests_completed": true,
+  "stable_qualified": false,
+  "rounds": [
+    {
+      "round": 1,
+      "ready_seconds": 67.6346732689999,
+      "battery_percent": 80,
+      "kernel_taint": 0,
+      "ext4_errors": 0
+    },
+    {
+      "round": 2,
+      "ready_seconds": 53.58279410999967,
+      "battery_percent": 80,
+      "kernel_taint": 0,
+      "ext4_errors": 0
+    },
+    {
+      "round": 3,
+      "ready_seconds": 65.21957442599523,
+      "battery_percent": 78,
+      "kernel_taint": 0,
+      "ext4_errors": 0
+    },
+    {
+      "round": 4,
+      "ready_seconds": 54.790076731995214,
+      "battery_percent": 78,
+      "kernel_taint": 0,
+      "ext4_errors": 0
+    },
+    {
+      "round": 5,
+      "ready_seconds": 94.85772577099851,
+      "battery_percent": 77,
+      "kernel_taint": 0,
+      "ext4_errors": 0
+    }
+  ],
+  "windows_scope": "Windows11 build26300.9457 with the actual phone forwarded through QEMU; native PCs and Windows10 untested",
+  "physical_round2_confirmed_by_operator": true,
+  "physical_round2_native_capture_missed_action_window": true,
+  "physical_round3_confirmation_pending": false,
+  "physical_round3_confirmed_by_operator": true,
+  "physical_round3_native_capture_missed_action_window": true,
+  "physical_round4_confirmation_pending": false,
+  "physical_round4_confirmed_by_operator": true,
+  "physical_round4_native_capture_missed_action_window": true,
+  "physical_round5_confirmation_pending": false,
+  "physical_round5_confirmed_by_operator": true,
+  "physical_round5_native_capture_missed_action_window": true,
+  "all_five_operator_physical_checks_complete": true
+}

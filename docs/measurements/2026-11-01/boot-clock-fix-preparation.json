@@ -1,0 +1,71 @@
+{
+  "scope": "Staged upstream clock backport and isolated RTC policy proposal; phone, candidate source and release artifacts unchanged",
+  "status": "host_preparation_passed_hardware_verification_pending",
+  "observed_at": "2026-11-01T06:39:02.035328+00:00",
+  "clock_fix": {
+    "observed_at": "2026-11-01T06:30:00.187404+00:00",
+    "status": "upstream_backport_staged_and_translation_unit_compiled",
+    "upstream_commit": "7cb2d65286b817d8d7e26f454a9c374d65e87072",
+    "upstream_url": "https://github.com/torvalds/linux/commit/7cb2d65286b817d8d7e26f454a9c374d65e87072",
+    "local_source_sha256": "937683b364a1a634a076c3eb9fcba53efdd3fccbf5ecdc8b6a20fd44429b63ee",
+    "proposed_source_sha256": "0fe24d87273871c005a36476e39ea086dc828f28f0c9d2e714ecbe1c305b55c9",
+    "patch_sha256": "d30a7900a047a679c4d86843f377a08f75eaee82cb1fb7de4fac40eb70f661f1",
+    "kernel_config_sha256": "6ca4f1ef5436ad6d016546b50b97de49b007caa09737553202ab813d74568ccb",
+    "patch_check_returncode": 0,
+    "compile_returncode": 0,
+    "compiled_object_sha256": "b2b885bba5a998897882acb32266e4ede6272abf1f8eb325554fb8af14b838ad",
+    "compiled_object_machine": "AArch64",
+    "original_source_unchanged": true,
+    "original_build_object_unchanged": true,
+    "candidate_artifacts_changed": false,
+    "installed_on_phone": false,
+    "warning_absence_hardware_verified": false,
+    "full_new_kernel_built": false,
+    "formal_24h_passed": false
+  },
+  "rtc_policy": {
+    "observed_at": "2026-11-01T06:37:39.300609+00:00",
+    "status": "isolated_rtc_policy_config_resolved",
+    "proposed_change": "Disable automatic RTC-to-system-clock initialization and resume override; retain RTC driver and existing SYSTOHC setting",
+    "kconfig_semantic_changes": {
+      "CONFIG_RTC_HCTOSYS": {
+        "before": "y",
+        "after": null
+      },
+      "CONFIG_RTC_HCTOSYS_DEVICE": {
+        "before": "\"rtc0\"",
+        "after": null
+      }
+    },
+    "effective_config_sha256": "65b058ee7666943b1ecbbb2c975fa8e944ab902e9b97dfb3a300ad6d69ff9abd",
+    "existing_server_config_verifier_returncode": 0,
+    "base_config_sha256": "6ca4f1ef5436ad6d016546b50b97de49b007caa09737553202ab813d74568ccb",
+    "candidate_artifacts_changed": false,
+    "installed_on_phone": false,
+    "journal_boot_fix_hardware_verified": false
+  },
+  "boot_time_evidence": {
+    "fake_hwclock_exit_uptime_seconds": 3.88832,
+    "late_rtc_clock_set_source_uptime_seconds": 6.682992,
+    "rtc_clock_set_year": 1970,
+    "journal_flush_start_uptime_seconds": 8.064588,
+    "journal_unclean_message_uptime_seconds": 8.179648,
+    "offline_renamed_journals_with_future_tail": 5,
+    "clock_regression_observed": true,
+    "journal_time_regression_cause_inferred": true,
+    "journal_cause_confirmed_by_new_boot": false
+  },
+  "reference_comparison": {
+    "kernel": "6.1.52-ophub",
+    "systemd": "systemd 252 (252.12-1~deb12u1)",
+    "retained_current_boot_journald_rows": 24,
+    "unclean_message_observed": false,
+    "ramlog_active": true,
+    "reference_modified": false,
+    "different_systemd_patch_level": true,
+    "does_not_validate_mi5": true
+  },
+  "phone_configuration_changed": false,
+  "qualification_restarted": false,
+  "full_24h_passed": false
+}

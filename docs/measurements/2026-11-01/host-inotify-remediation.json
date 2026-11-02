@@ -1,0 +1,17 @@
+{
+  "observed_at": "2026-11-01T11:18:21.025250+00:00",
+  "host_inotify_limit_before": 84562,
+  "host_inotify_limit_after": 262144,
+  "visible_watches_before": 84462,
+  "largest_visible_watchers": "Two Codium processes: 42937 and 41349 watches",
+  "temporary_limit_only": true,
+  "persistent_host_configuration_modified": false,
+  "new_inotify_watch_succeeded": true,
+  "archive_wrapper_main_exit_status": 0,
+  "archive_wrapper_unit_result": "timeout",
+  "archive_wrapper_cleanup_timeout_seconds": 90,
+  "artifact_validation_passed": true,
+  "inotify_exhaustion_observed_in_unit_journal": true,
+  "inotify_exhaustion_as_cleanup_timeout_cause": "inferred_not_reproduced",
+  "phone_modified": false
+}

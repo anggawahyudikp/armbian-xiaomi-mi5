@@ -1,0 +1,18 @@
+{
+  "status": "home_inconclusive_no_key_event_observed",
+  "observer_ended_normally": true,
+  "observer_process_ended": true,
+  "same_boot_verified": true,
+  "observed_seconds": 1800.14,
+  "home_events": 0,
+  "home_wake_verified": false,
+  "user_visual_confirmation_received": false,
+  "display_remained_asleep": true,
+  "local_http_checks": 883,
+  "local_http_failures": 0,
+  "independent_samples_in_partial_overlap": 27,
+  "independent_full_window_coverage": false,
+  "host_restart_interrupted_independent_observation": true,
+  "full_24h_passed": false,
+  "new_candidate_hardware_verified": false
+}

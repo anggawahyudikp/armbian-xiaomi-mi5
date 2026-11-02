@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-11-01T16:58:06.792915+00:00",
+  "status": "deadline_results_require_review",
+  "full_24h_passed": false,
+  "stable_established": false,
+  "independent_coverage_gap": true,
+  "phone_shutdown_requested": false,
+  "native_stop_confirmed": false,
+  "native_evidence_error": "JSONDecodeError",
+  "host_segments": [
+    {
+      "segment": "original",
+      "recorded_status": "running",
+      "samples": 544,
+      "elapsed_seconds": 32580.81,
+      "failure_count": 0,
+      "external_http_failure_count": 0
+    },
+    {
+      "segment": "after_host_restart",
+      "recorded_status": "failed",
+      "samples": 33,
+      "elapsed_seconds": 1919.9300000000003,
+      "failure_count": 4,
+      "external_http_failure_count": 0
+    }
+  ]
+}

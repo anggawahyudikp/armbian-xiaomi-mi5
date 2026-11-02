@@ -1,0 +1,32 @@
+{
+  "scope": "Disposable ARM64 Docker integration parallel to the original charger qualification; original workload not restarted",
+  "status": "passed",
+  "started_at": "2026-11-01T04:54:03.114981+00:00",
+  "finished_at": "2026-11-01T04:54:29.735770+00:00",
+  "checks": {
+    "nonroot_readonly_cgroup_limits": true,
+    "unprivileged_volume_write": true,
+    "user_network_dns_and_http": true,
+    "external_dns_and_http": true,
+    "restart_policy_after_deliberate_test_crash": true,
+    "volume_survives_container_recreation": true,
+    "original_workload_and_network_preserved": true
+  },
+  "limits": {
+    "memory_bytes": 67108864,
+    "cpu_fraction": 0.25,
+    "pids": 16,
+    "readonly_root": true,
+    "uid": 65534,
+    "capabilities_dropped": "ALL",
+    "no_new_privileges": true
+  },
+  "disposable_container_restart_count": 1,
+  "cleanup_errors": [],
+  "original_workload_restart_count": 0,
+  "ext4_errors_after": 0,
+  "earlier_attempt_retained": true,
+  "earlier_attempt_http_check_passed": false,
+  "client_uses_image_native_tools": true,
+  "full_24h_passed": false
+}

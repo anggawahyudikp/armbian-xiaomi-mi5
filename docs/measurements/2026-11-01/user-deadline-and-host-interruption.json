@@ -1,0 +1,31 @@
+{
+  "observed_at": "2026-11-01T11:02:19.502808+00:00",
+  "original_host_monitor_pid_present": false,
+  "original_archive_wrapper_pid_present": false,
+  "original_host_samples": 544,
+  "last_host_sample_timestamp": "2026-11-01T09:51:34.433192+00:00",
+  "original_host_report": {
+    "status": "running",
+    "required_hours": 24.0,
+    "elapsed_seconds": 32580.81,
+    "samples": 544,
+    "complete_samples": 544,
+    "failures": [],
+    "scope": "Independent host SSH/HTTP plus device/charger/application soak; other release gates are separate",
+    "external_http_failures": []
+  },
+  "native_same_boot_after_host_restart": true,
+  "native_report_after_host_restart": {
+    "status": "running",
+    "required_hours": 24.1,
+    "elapsed_seconds": 36622.39,
+    "samples": 592,
+    "complete_samples": 592,
+    "failures": [],
+    "scope": "Local device/charger/app soak; independent Wi-Fi reachability and other release gates are separate"
+  },
+  "independent_coverage_gap": true,
+  "full_24h_passed": false,
+  "user_deadline": "2026-11-01T16:59:00+00:00",
+  "scheduled_stop": "2026-11-01T16:58:00+00:00"
+}

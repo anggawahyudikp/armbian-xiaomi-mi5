@@ -1,0 +1,28 @@
+{
+  "scope": "User-revised Wi-Fi throughput criterion for the current 2.4 GHz deployment",
+  "authorization": "User requested changing the requirement to the current Wi-Fi speed after being offered a 0.5 MB/s minimum",
+  "authorized_at": "2026-11-02T08:15:39.953350+00:00",
+  "original_required_mb_per_second": 10,
+  "original_target_met": false,
+  "required_mb_per_second": 0.5,
+  "measurement_kind": "Previously recorded native TCP receive throughput, ten seconds per direction",
+  "measurement_source_sha256": "cc59a7ef8e8152ce3e54d32149cd4148055f842e618703cc4796236f8a52b7fd",
+  "directions": {
+    "phone_to_host": {
+      "received_bits_per_second": 5213467.70062018,
+      "received_mb_per_second": 0.6516834625775225,
+      "seconds": 10.056416,
+      "bytes": 6553600
+    },
+    "host_to_phone": {
+      "received_bits_per_second": 4701714.74580598,
+      "received_mb_per_second": 0.5877143432257474,
+      "seconds": 10.000491,
+      "bytes": 5877432
+    }
+  },
+  "criterion_met": true,
+  "measurement_repeated": false,
+  "sustained_24h_throughput_verified": false,
+  "stable_qualified": false
+}

@@ -1,0 +1,54 @@
+{
+  "scope": "Actual final-image Mi 5 USB devices forwarded to Windows 11 kernel in private QEMU VM",
+  "windows_build": "26300.9457",
+  "native_windows_pc_tested": false,
+  "windows10_tested": false,
+  "modes": {
+    "rndis": {
+      "passed": true,
+      "actual_revision": "0102",
+      "microsoft_signed_driver": true,
+      "driver_versions": [
+        "10.0.26100.1"
+      ],
+      "phone_dhcp_verified": true,
+      "no_usb_default_route": true,
+      "controlled_virtual_default_route_preserved": true,
+      "no_usb_dns": true,
+      "ssh_plain": true,
+      "ssh_pty": true,
+      "application_http": true,
+      "serial_linux_prompt": true,
+      "source_sha256": "86a2fae4d6592c36bccd3b7ea5a869f6bc08edf3d34cbcede9581ec6749caa34"
+    },
+    "ncm": {
+      "passed": true,
+      "actual_revision": "0103",
+      "microsoft_signed_driver": true,
+      "driver_versions": [
+        "10.0.26100.9444"
+      ],
+      "phone_dhcp_verified": true,
+      "no_usb_default_route": true,
+      "controlled_virtual_default_route_preserved": true,
+      "no_usb_dns": true,
+      "ssh_plain": true,
+      "ssh_pty": true,
+      "application_http": true,
+      "serial_linux_prompt": true,
+      "source_sha256": "fcf30bc816947a6875a8be6806657439bf9d9430a6412b92c989d27549b54233"
+    }
+  },
+  "real_microsoft_descriptors_preserved": true,
+  "remote_wakeup_not_suppressed": true,
+  "ncm_serial_finished_before_fallback_minimum_seconds": 4.584798812866211,
+  "ncm_timing_clock_sample_roundtrip_seconds": 0.0065462589263916016,
+  "late_mode_metadata_check_failed_then_resolved_by_monotonic_timing": true,
+  "temporary_phone_key_revoked": true,
+  "guest_key_removed_offline_after_guest_shutdown": true,
+  "host_temporary_private_key_and_secret_payload_removed": true,
+  "rndis_original_acl_restored": true,
+  "ncm_temporary_acl_removed_with_original_usb_node": true,
+  "vm_and_tpm_stopped": true,
+  "stable_qualified": false
+}

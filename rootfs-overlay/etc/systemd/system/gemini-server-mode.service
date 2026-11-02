@@ -1,0 +1,11 @@
+[Unit]
+Description=Mi 5 server CPU defaults
+After=local-fs.target systemd-udev-settle.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/gemini-server-mode.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

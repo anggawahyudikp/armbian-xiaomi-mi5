@@ -1,0 +1,55 @@
+{
+  "observed_at": "2026-10-31T13:52:18.058643+00:00",
+  "scope": "Actual phone endpoint-zero descriptors; not a Windows driver, DHCP or SSH test",
+  "read_only": true,
+  "device_class": [
+    239,
+    2,
+    1
+  ],
+  "active_configuration": 1,
+  "configuration_attributes": 128,
+  "max_power_ma": 500,
+  "interfaces": [
+    {
+      "number": 0,
+      "alternate": 0,
+      "class": 2,
+      "subclass": 2,
+      "protocol": 255,
+      "endpoints": 1
+    },
+    {
+      "number": 1,
+      "alternate": 0,
+      "class": 10,
+      "subclass": 0,
+      "protocol": 0,
+      "endpoints": 2
+    },
+    {
+      "number": 2,
+      "alternate": 0,
+      "class": 2,
+      "subclass": 2,
+      "protocol": 1,
+      "endpoints": 1
+    },
+    {
+      "number": 3,
+      "alternate": 0,
+      "class": 10,
+      "subclass": 0,
+      "protocol": 0,
+      "endpoints": 2
+    }
+  ],
+  "microsoft_os_string": "MSFT100",
+  "microsoft_vendor_code": 205,
+  "compatible_descriptor_bytes": 40,
+  "compatible_interface": 0,
+  "compatible_id": "RNDIS",
+  "sub_compatible_id": "5162001",
+  "physical_descriptor_checks_passed": true,
+  "windows_verified": false
+}

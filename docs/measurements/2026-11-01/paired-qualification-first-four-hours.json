@@ -1,0 +1,44 @@
+{
+  "scope": "First four hours of the ongoing paired charger qualification; sampled availability and filtered DHCP journal observations, not a completed 24-hour or packet-capture result",
+  "status": "partial_observation_passed",
+  "samples": 241,
+  "host_scheduled_span_seconds": 14400.036,
+  "device_sample_span_seconds": 14402.3,
+  "maximum_device_sample_gap_seconds": 65.59,
+  "independent_http_and_ssh_all_samples_passed": true,
+  "same_boot_all_samples": true,
+  "main_container_restarts": 0,
+  "ext4_errors": 0,
+  "battery_percent_first_last": [
+    77,
+    99
+  ],
+  "battery_temperature_c_range": [
+    24.7,
+    25.0
+  ],
+  "cpu_temperature_c_range": [
+    46.9,
+    55.9
+  ],
+  "counter_first_last": [
+    8942,
+    10379
+  ],
+  "dhcp": {
+    "source_windows_cover_sample_interval": true,
+    "source_windows": 43,
+    "deduplicated_new_lease_events": 262,
+    "other_filtered_dhcp_events": 0,
+    "lease_event_interval_seconds_min_median_max": [
+      52.861,
+      54.103,
+      100.995
+    ],
+    "journal_filter": "NetworkManager messages containing dhcp4 (wlan0)",
+    "lease_events_are_not_packet_level_acknowledgements": true
+  },
+  "brief_outage_between_samples_excluded": false,
+  "full_24h_passed": false,
+  "other_release_gates_separate": true
+}

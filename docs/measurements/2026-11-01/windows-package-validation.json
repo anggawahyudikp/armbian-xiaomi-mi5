@@ -1,0 +1,9 @@
+{
+  "scope": "Native Windows execution of shipped installer payload verifier; no phone writes or installer main invoked",
+  "python": "3.15.2 (tags/v3.15.2:5e58eaa, Oct 25 2026, 17:27:03) [MSC v.1951 64 bit (AMD64)]",
+  "package_sha256": "19be1df7efdce4e51a5f76352251c4f9b14a1a2f0b4efc115670ecdef15fe514",
+  "boot_bytes": 15667200,
+  "expanded_rootfs_bytes": 4718592000,
+  "payload_validation_passed": true,
+  "fresh_install_passed": false
+}

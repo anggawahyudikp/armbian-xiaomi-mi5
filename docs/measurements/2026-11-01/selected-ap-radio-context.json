@@ -1,0 +1,21 @@
+{
+  "scope": "Read-only selected AP cache and client PHY observation during ongoing qualification; no active scan, association or configuration change",
+  "observed_at": "2026-11-01T04:06:28.298965+00:00",
+  "cached_associated_ap_found": true,
+  "frequency_mhz": 2462,
+  "primary_channel": 11,
+  "operating_channel_width_mhz": 20,
+  "ap_advertised_ht_width": "HT20",
+  "ap_secondary_channel": "none",
+  "ap_advertised_ht_mcs_indexes": "0-15",
+  "client_advertised_ht_width": "HT20/HT40",
+  "client_advertised_ht_mcs_indexes": "0-7",
+  "cached_signal_dbm": -78,
+  "manufacturer_or_model_fields_present": false,
+  "ap_model_determined": false,
+  "hardware_chain_count_determined": false,
+  "active_scan_requested": false,
+  "configuration_changed": false,
+  "target_10_MB_per_second_verified": false,
+  "formal_24h_passed": false
+}

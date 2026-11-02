@@ -1,0 +1,28 @@
+{
+  "observed_at": "2026-11-01T07:07:11.584741+00:00",
+  "status": "staged_project_integration_checks_passed_not_applied",
+  "clock_helper_tests_passed": 9,
+  "fresh_pinned_source_overlay_application_passed": true,
+  "overlay_second_application_content_identical": true,
+  "unknown_source_rejected_before_overlay_writes": true,
+  "applied_clock_source_matches_isolated_build": true,
+  "rtc_policy_config_accepted": true,
+  "legacy_rtc_policy_config_rejected": true,
+  "provenance_conflicting_source_rejected": true,
+  "complete_new_provenance_record_tested": false,
+  "original_build_inputs_unchanged": 182,
+  "project_proposal_applied_to_main_worktree": false,
+  "phone_configuration_changed": false,
+  "main_worktree_patch_check_returncode": 0,
+  "scope": "Proposed permanent build integration validated in private fixtures; original 182 live build inputs unchanged",
+  "project_files_proposed": [
+    "scripts/apply-msm8996-clock-fix.py",
+    "scripts/apply-overlays.sh",
+    "config/gemini.fragment",
+    "scripts/verify-kernel-config.py",
+    "scripts/record-build.py",
+    "tests/boot/run.sh",
+    "tests/boot/test_clock_fix.py"
+  ],
+  "full_new_kernel_or_release_validation_claimed": false
+}

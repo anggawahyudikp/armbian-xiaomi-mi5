@@ -1,0 +1,7 @@
+# Armbian ZRAM swap configuration for Xiaomi Mi 5 (gemini)
+ENABLED=true
+SWAP=true
+ZRAM_PERCENTAGE=50
+MEM_LIMIT_PERCENTAGE=50
+SWAP_ALGORITHM=zstd
+RAMLOG_ALGORITHM=zstd

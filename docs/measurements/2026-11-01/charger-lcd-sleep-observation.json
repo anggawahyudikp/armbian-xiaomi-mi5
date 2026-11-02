@@ -1,0 +1,15 @@
+{
+  "scope": "Early LCD sleep observation on the final charger boot; physical Power/Home and full qualification remain separate",
+  "observed_at": "2026-11-01T00:59:15.247549+00:00",
+  "observed_sleep_seconds": 136.84,
+  "display_awake": false,
+  "backlight_brightness": 0,
+  "local_application_checks": 68,
+  "local_application_failures": 0,
+  "independent_authenticated_ssh_http_checks_while_asleep": 2,
+  "independent_failures_while_asleep": 0,
+  "physical_key_events_seen": 0,
+  "physical_sleep_wake_verified": false,
+  "formal_24h_passed": false,
+  "qualification_restarted": false
+}

@@ -1,0 +1,23 @@
+{
+  "status": "unresolved_charger_thermal_shutdown_bootloop",
+  "checked_at": "2026-11-02T05:58:00+07:00",
+  "usb_recovered": true,
+  "known_diagnostic_ram_boot_passed": true,
+  "installed_boot_sha256": "294e1958c9bf96f69627280fbc69b34332c0df2a923f3276bb14fd8069563939",
+  "userdata_mounted_readonly_noload": true,
+  "journal_boots_observed": 8,
+  "kernel_shutdown_reason": "Charger thermal emergency",
+  "actual_overtemperature_vs_driver_false_interrupt": "not established",
+  "source_review": "temp-shutdown is configured IRQ_TYPE_EDGE_BOTH; its handler unconditionally invokes hw_protection_trigger without checking live MISC_RT_STS",
+  "journal_archive": {
+    "sha256": "c4376c2c4fc120f3fcb81c6ad45339900f796c3d9a08221f1f6cfa23391be93a",
+    "bytes": 869017,
+    "source_hash_matches": true,
+    "archive_readable": true,
+    "entries": 10
+  },
+  "phone_returned_to_fastboot": true,
+  "latest_candidate_flashed": false,
+  "protection_disabled": false,
+  "stable_qualified": false
+}

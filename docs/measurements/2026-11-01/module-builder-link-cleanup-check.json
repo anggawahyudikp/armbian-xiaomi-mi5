@@ -1,0 +1,18 @@
+{
+  "observed_at": "2026-11-01T07:28:35.753579+00:00",
+  "status": "staged_module_link_cleanup_verified_on_private_clone",
+  "module_release_used_for_this_check": "7.0.0-gemini-lk-dirty",
+  "before_cleanup_only_new_link_guard_failed": true,
+  "after_cleanup_checks_passed": 44,
+  "after_cleanup_rootfs_sha256": "6c2798946a301dc40ad031591709a4bdba965c0f2c030088f950838039fc1340",
+  "source_validation_rootfs_sha256": "9ee361afe8a4d4e685c65e99e6da667d438682a8c48a3af92995e7864e11aa04",
+  "original_generic_source_modified": false,
+  "main_build_inputs_modified": false,
+  "new_kernel_modules_installed": false,
+  "new_rootfs_image_built": false,
+  "phone_modified": false,
+  "complete_new_candidate_validation": false,
+  "scope": "Cleanup and new validation guard exercised on the private generic clone with its old module release; not final new candidate validation",
+  "initial_host_namespace_attempt_retained": true,
+  "builder_namespace_copy_matched_recorded_validation": true
+}

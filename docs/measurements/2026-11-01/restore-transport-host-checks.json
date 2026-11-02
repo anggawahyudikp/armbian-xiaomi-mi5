@@ -1,0 +1,52 @@
+{
+  "status": "passed_host_fixture_only",
+  "fixture_bytes": 4194304,
+  "normal_image_overwrites_dirty_fixture_exactly": true,
+  "normal_image_chunk_counts": {
+    "raw": 2,
+    "fill": 3,
+    "dont_care": 0,
+    "crc": 0
+  },
+  "split_transfer_cap_bytes": 8192,
+  "split_parts": [
+    {
+      "bytes": 4220,
+      "counts": {
+        "raw": 3,
+        "fill": 3,
+        "dont_care": 1,
+        "crc": 0
+      }
+    },
+    {
+      "bytes": 4148,
+      "counts": {
+        "raw": 1,
+        "fill": 0,
+        "dont_care": 1,
+        "crc": 0
+      }
+    }
+  ],
+  "all_split_parts_overwrite_dirty_fixture_exactly": true,
+  "hole_skipping_negative_control_mismatch_detected": true,
+  "hole_skipping_chunk_counts": {
+    "raw": 2,
+    "fill": 1,
+    "dont_care": 2,
+    "crc": 0
+  },
+  "expected_fixture_sha256": "f371942c9db7c2f94bfb975f2c09b885a6ec74912f521f95528272c4a3de1240",
+  "split_applied_fixture_sha256": "f371942c9db7c2f94bfb975f2c09b885a6ec74912f521f95528272c4a3de1240",
+  "phone_partitions_written": false,
+  "actual_fastboot_restore_verified": false,
+  "full_userdata_backup_verified": false,
+  "scope": "Host-only synthetic sparse conversion, multipart coverage and dirty-target simulation; no phone restore performed",
+  "host_tool_version": "34.0.5-debian",
+  "references": [
+    "https://android.googlesource.com/platform/system/core/+/android14-release/fastboot/fastboot.cpp",
+    "https://android.googlesource.com/platform/system/core/+/android14-release/libsparse/sparse_read.cpp",
+    "https://android.googlesource.com/platform/system/core/+/android14-release/libsparse/img2simg.cpp"
+  ]
+}

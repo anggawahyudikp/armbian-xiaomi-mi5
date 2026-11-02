@@ -1,0 +1,46 @@
+{
+  "observed_at": "2026-11-01T09:50:37.776587+00:00",
+  "first_kernel_build_completed": true,
+  "first_kernel_release": "7.0.0-gemini-lk-clockrtc",
+  "original_product_inputs_unchanged_during_first_build": true,
+  "original_candidate_artifacts_unchanged": true,
+  "reviewed_source_files_integrated": 9,
+  "actual_integrated_python_boot_tests_passed": 46,
+  "actual_integrated_c_init_modes_passed": 2,
+  "actual_integrated_server_tests_passed": 22,
+  "incremental_build_launched": true,
+  "matching_final_images_built": true,
+  "phone_modified": false,
+  "new_candidate_hardware_verified": false,
+  "full_24h_passed": false,
+  "integrated_kernel_build_completed": true,
+  "integrated_kernel_build_inputs_unchanged": true,
+  "kernel_release": "7.0.0-gemini-lk-clockrtc",
+  "rootfs_configured_with_new_kernel_modules": true,
+  "offline_boot_validation": {
+    "boot-validation.json": {
+      "passed": true,
+      "sha256": "294e1958c9bf96f69627280fbc69b34332c0df2a923f3276bb14fd8069563939"
+    },
+    "boot-diagnostic-validation.json": {
+      "passed": true,
+      "sha256": "ca0f50c5953373029f67cb167948e6c3f714205ac7a289817ab6ec4cd0f36f47"
+    },
+    "usb-debug-verification.json": {
+      "passed": true,
+      "sha256": "712585e1c98f897abf4fcc05fbf84fbb9bf610f8988b365baa744f0efb75143e"
+    }
+  },
+  "rootfs_checks_passed": 44,
+  "rootfs_fingerprint": "5149d4e658b2a080ef861ffd9151f28c995ae57e2dd5afe89e20dfc50236f7fb",
+  "rootfs_image_build_started": true,
+  "sparse_roundtrip_passed": true,
+  "rootfs_image_hashes": {
+    "rootfs.ext4": "19ca0e70bc5bc02e2a167f3e90c5534b2306ef94c64d18fce478ce8fea21ec39",
+    "rootfs.img": "358d00426a46a192ec090b8cc65023ca324ac8739eabc54b14203f463725c671"
+  },
+  "actual_final_python_boot_tests_passed": 48,
+  "offline_archive_pipeline_started": true,
+  "complete_new_release_provenance_recorded": true,
+  "offline_release_validation_passed": true
+}

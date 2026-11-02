@@ -1,0 +1,7 @@
+# Optional RAM-only bring-up build. Merge onto the verified Gemini config.
+# Keep console messages in the existing 0x92900000 ramoops region, including
+# hangs which never reach an explicit panic. Android uses the same layout.
+CONFIG_PSTORE=y
+CONFIG_PSTORE_RAM=y
+CONFIG_PSTORE_CONSOLE=y
+CONFIG_PSTORE_PMSG=y

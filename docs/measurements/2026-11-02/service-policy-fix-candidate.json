@@ -1,0 +1,18 @@
+{
+  "offline_validation_passed": true,
+  "source_inputs_unchanged": true,
+  "kernel_release": "7.0.0-gemini-lk-clockrtc-chgstatus",
+  "boot_sha256": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+  "rootfs_raw_sha256": "aed494e39db1213cb2ea27cab537653f9b55c005afcc721eb7916f9452241dbd",
+  "rootfs_sparse_sha256": "42cfe9a2e4f3342e5f4fb291d1fba6ee8b710ac166986d50686307f68d3d6bef",
+  "root_uuid": "33169aed-27d0-46f3-b1c3-39f38e3d29a9",
+  "source_input_count": 194,
+  "boot_kernel_dtb_byte_identical_to_previous": true,
+  "build_only_service_policy_removed": true,
+  "generic_first_boot_verified": true,
+  "stable_qualified": false,
+  "package_service_autostart_verified": true,
+  "usb_reboots_verified": 5,
+  "five_usb_reboots_complete": true,
+  "first_login_scope": "Normal serial onboarding on the flashed generic image; English locale and account creation, without a console startup repair"
+}

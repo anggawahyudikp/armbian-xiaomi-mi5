@@ -1,0 +1,9 @@
+{
+  "chipset": "QCA6174 hw3.2",
+  "source": "Xiaomi Mi 5 modem partition, image/bdwlan30.bin",
+  "source_path": "firmware/gemini/ath10k/QCA6174/hw3.0/board-pci-0000:01:00.0.bin",
+  "install_path": "usr/lib/firmware/ath10k/QCA6174/hw3.0/board-pci-0000:01:00.0.bin",
+  "bytes": 8124,
+  "sha256": "31f673fa85adceda5ed480f2a1eaf2686e86c1ca9bbff49c35dc9a34e5a61430",
+  "linux_crc32": "308ae9a4"
+}

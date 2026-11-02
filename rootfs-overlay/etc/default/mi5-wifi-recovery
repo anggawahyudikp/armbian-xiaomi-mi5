@@ -1,0 +1,3 @@
+# Opt in with the UUID of a saved system-wide Wi-Fi profile. Never put a PSK here.
+PROFILE_UUID=
+INTERFACE=wlan0

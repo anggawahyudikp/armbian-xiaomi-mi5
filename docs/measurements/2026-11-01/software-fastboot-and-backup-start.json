@@ -1,0 +1,14 @@
+{
+  "software_entry_succeeded": true,
+  "command": "systemctl reboot bootloader",
+  "volume_down_held": false,
+  "usb_fastboot_identity_verified": true,
+  "product_response": "MSM8996",
+  "max_download_bytes": 536870912,
+  "unlocked": true,
+  "scope": "One verified entry on the prior running kernel; new kernel remains untested",
+  "diagnostic_ram_boot_succeeded": true,
+  "userdata_erase_authorized": false,
+  "backup_copy_started_read_only": true,
+  "backup_complete": false
+}

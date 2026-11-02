@@ -1,0 +1,17 @@
+{
+  "status": "stopped_by_user",
+  "authorization": "The user explicitly removed the 24-hour criterion and requested switching to the remaining tests.",
+  "previous_required_hours": 24,
+  "full_24h_passed": false,
+  "observed_report": {
+    "status": "running",
+    "required_hours": 24.0,
+    "elapsed_seconds": 1679.55,
+    "samples": 29,
+    "complete_samples": 29,
+    "failures": [],
+    "scope": "Independent host SSH/HTTP plus device/charger/application soak; other release gates are separate",
+    "external_http_failures": []
+  },
+  "duration_gate_required": false
+}

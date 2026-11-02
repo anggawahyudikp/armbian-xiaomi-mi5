@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "qualified": true,
+  "qualified_at": "2026-11-02T22:45:35.116656+00:00",
+  "scope": "Existing battery; normal USB charging; Wi-Fi-first lightweight Docker server; LCD console with display-only sleep; Linux USB maintenance; scoped Windows11 VM class-driver validation",
+  "kernel_release": "7.0.0-gemini-lk-clockrtc-chgstatus",
+  "boot_sha256": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+  "rootfs_sparse_sha256": "66459d1b59a02813e782019beee1ac4ce05f8d6937fb44cee16a850da4657031",
+  "rootfs_raw_sha256": "0671f149f039dc3480d4172637d7600c81a097cbb4e995eb5a5d55f88885e86e",
+  "usb_reboots": 5,
+  "charger_runtime_reboots": 5,
+  "operator_lcd_checks_after_usb_boots": 5,
+  "usb_ready_seconds": [
+    67.6346732689999,
+    53.58279410999967,
+    65.21957442599523,
+    54.790076731995214,
+    94.85772577099851
+  ],
+  "version_only_promotion": {
+    "passed": true,
+    "entries_compared": 49677,
+    "changed_paths": [
+      "usr/share/mi5/project.json"
+    ],
+    "all_other_contents_modes_owners_xattrs_equal": true,
+    "scope": "Generic rootfs metadata promotion; version file only, no functional runtime change"
+  },
+  "exact_stable_image_first_boot_tested": false,
+  "first_boot_scope": "Fresh generic predecessor installed and onboarded on hardware; stable rootfs differs only in the verified version metadata file. Running phone metadata promoted to the same version. Boot/kernel/functional rootfs byte-identical. No additional reinstall claimed.",
+  "wifi_minimum_mb_per_second": 0.5,
+  "wifi_short_transfer_mb_per_second": [
+    0.651683,
+    0.587714
+  ],
+  "duration_24h_required": false,
+  "duration_24h_passed": false,
+  "untested": [
+    "Native Windows PCs",
+    "Windows10",
+    "Physical USB Ethernet and LAN failover",
+    "Direct battery power modification",
+    "Full-system backup restore on hardware",
+    "TWRP installation path",
+    "Physically induced charger thermal emergency",
+    "Continuous 24-hour service guarantee"
+  ],
+  "final_battery_percent": 77,
+  "final_battery_temp_c": 25.0,
+  "final_cpu_max_c": 47.5,
+  "test_fixture_removed": true,
+  "temporary_test_guard_removed_after_testing": true,
+  "published": false,
+  "source_evidence_sha256": {
+    "usb-final-five-rounds.json": "bc25e5c421a748f7b75c15e41ce09daa494b06eb220a3a78217bc9e298b19cf8",
+    "charger-runtime-five-boots/status.json": "4383d08d60435e75794e02bf1b8714fd7f895b2b0c3944a48f5a87f59f431a97",
+    "app-storage-current-result.json": "c0cdc22902412aa34fec111bce6a3453785ebb63e573aabbc17a5546094102ca",
+    "cpu-memory-floor5-result.json": "66c21ac5dcf8bf0c7d43b59b03973588a7c3d18318b5cd05bf8f5405877b5546",
+    "ap-return-current/result.json": "414c50dedc7229fe85711f3674171490ff1b459d0621c824eb0d11e056a31167",
+    "windows-final/result.json": "2cfc705b18637fe70cc223a6a5cbd84bdd06a5d73371f82ebeaed65f447352d3",
+    "final-health-before-cleanup.json": "ee8fbb3453f77dc2558853da9a4a21539a73e5af41d2c17a298316acd882e41b",
+    "final-native-cleanup.json": "cb84631b93798e3de2eabd98063a6a940e7a5a0bf6d72ad58415da9682a83aee",
+    "completion-snapshot/verified.json": "3ac8723c6f7339b01d2a1f0621b22ae3297c1386517f6453d42d1e0904696f50",
+    "stable-0.1.0/rootfs-promotion-delta.json": "2d1443ffbb6f6c4f62c6f67a1b1c5dc5d09e3012a47c7722916d88dbeef011fb",
+    "stable-0.1.0/artifacts/build-provenance.json": "9aec367b8929869514e0d5d9512a66eb8a28be4782bf4dbc74762720bda94e46"
+  }
+}

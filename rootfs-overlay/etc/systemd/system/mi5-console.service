@@ -1,0 +1,18 @@
+[Unit]
+Description=Mi 5 LCD console and display idle control
+After=local-fs.target console-setup.service gemini-server-mode.service
+Before=getty@tty1.service
+Wants=getty@tty1.service
+Conflicts=display-unblank.service gemini-fb-ui.service
+
+[Service]
+Type=notify
+TimeoutStartSec=40
+ExecStartPre=/usr/local/sbin/mi5-console-setup.sh
+ExecStart=/usr/local/sbin/mi5-console daemon
+Restart=on-failure
+RestartSec=3
+RuntimeDirectory=mi5-console
+
+[Install]
+WantedBy=multi-user.target

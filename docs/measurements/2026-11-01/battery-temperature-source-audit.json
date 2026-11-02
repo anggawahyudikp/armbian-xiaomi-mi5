@@ -1,0 +1,21 @@
+{
+  "scope": "Read-only driver/source provenance audit of reported battery temperature, not physical sensor calibration or thermal fault injection",
+  "observed_at": "2026-11-01T07:39:38.619447+00:00",
+  "status": "reported_temperature_read_path_verified",
+  "compatible": [
+    "qcom,pmi8994-fg"
+  ],
+  "driver": "qcom-fg",
+  "fuel_gauge_source_sha256": "90681dcb8c890679558c5dd5c0c1273898f33c6fa6f30a6a0874e1511119aa52",
+  "source_matches_frozen_candidate_input": true,
+  "temperature_read_from_fuel_gauge_sram": true,
+  "driver_temperature_read_failure_propagated": true,
+  "fixed_25c_fallback_used_by_monitor": false,
+  "raw_sysfs_temperature": 250,
+  "sysfs_scale_per_celsius": 10,
+  "reported_temperature_celsius": 25.0,
+  "physical_sensor_calibration_verified": false,
+  "thermal_fault_injection_performed": false,
+  "charging_controls_or_thresholds_changed": false,
+  "full_24h_passed": false
+}

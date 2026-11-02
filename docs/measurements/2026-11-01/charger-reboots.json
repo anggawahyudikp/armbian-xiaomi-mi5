@@ -1,0 +1,75 @@
+{
+  "scope": "Normal charger-only reboot sequence of installed candidate; physical LCD and fresh installation separate",
+  "passed": false,
+  "passed_rounds": 4,
+  "required_consecutive_rounds": 5,
+  "formal_24h_started": false,
+  "rounds": [
+    {
+      "round": 1,
+      "status": "passed",
+      "ready_after_seconds": 148.94,
+      "reason": null,
+      "battery_percent": 33,
+      "battery_current_ua": -1091759,
+      "battery_status": "Charging",
+      "root_write_passed": true,
+      "ext4_errors": 0,
+      "normal_reboot_requested": true
+    },
+    {
+      "round": 2,
+      "status": "passed",
+      "ready_after_seconds": 68.41,
+      "reason": null,
+      "battery_percent": 34,
+      "battery_current_ua": -1275169,
+      "battery_status": "Charging",
+      "root_write_passed": true,
+      "ext4_errors": 0,
+      "normal_reboot_requested": true
+    },
+    {
+      "round": 3,
+      "status": "passed",
+      "ready_after_seconds": 58.17,
+      "reason": null,
+      "battery_percent": 35,
+      "battery_current_ua": -1248924,
+      "battery_status": "Charging",
+      "root_write_passed": true,
+      "ext4_errors": 0,
+      "normal_reboot_requested": true
+    },
+    {
+      "round": 4,
+      "status": "passed",
+      "ready_after_seconds": 77.58,
+      "reason": null,
+      "battery_percent": 37,
+      "battery_current_ua": -1253654,
+      "battery_status": "Charging",
+      "root_write_passed": true,
+      "ext4_errors": 0,
+      "normal_reboot_requested": true
+    },
+    {
+      "round": 5,
+      "status": "failed",
+      "ready_after_seconds": null,
+      "reason": "Candidate did not satisfy USB and Wi-Fi checks within 180 seconds",
+      "battery_percent": null,
+      "battery_current_ua": null,
+      "battery_status": null,
+      "root_write_passed": null,
+      "ext4_errors": null,
+      "normal_reboot_requested": true
+    }
+  ],
+  "failure": "Fifth attempt failed the 180-second network reachability gate. Later USB inspection confirmed Linux was running and Wi-Fi authentication succeeded, but DHCP repeatedly timed out.",
+  "diagnosis_pending": false,
+  "dhcp_fault_root_cause_pending": true,
+  "followup_linux_boot_observed": true,
+  "followup_old_network_authenticated": true,
+  "followup_old_network_dhcp_timeout": true
+}

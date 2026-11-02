@@ -1,0 +1,25 @@
+{
+  "scope": "Initial exact generic rootfs base clone before subsequent candidate changes; not live-phone userdata backup",
+  "status": "generic_rootfs_base_cloned_and_verified",
+  "observed_at": "2026-11-01T07:25:14.440680+00:00",
+  "source_rootfs_sha256": "9ee361afe8a4d4e685c65e99e6da667d438682a8c48a3af92995e7864e11aa04",
+  "copy_rootfs_sha256": "9ee361afe8a4d4e685c65e99e6da667d438682a8c48a3af92995e7864e11aa04",
+  "source_unchanged": true,
+  "copy_fingerprint_includes_ownership_modes_content_and_xattrs": true,
+  "copy_command_returncode": 0,
+  "validation_namespace": "original Armbian builder container",
+  "source_uid_gid_in_namespace": [
+    0,
+    0
+  ],
+  "initial_host_namespace_attempt_retained": true,
+  "copied_module_releases": [
+    "7.0.0-gemini-lk-dirty"
+  ],
+  "new_kernel_modules_installed": false,
+  "new_rootfs_image_built": false,
+  "phone_modified": false,
+  "full_userdata_backup_verified": false,
+  "ownership_namespace_note": "Initial host-root comparison used unmapped ownership and was rejected; the original builder namespace matched the recorded fingerprint",
+  "new_candidate_rootfs_complete": false
+}

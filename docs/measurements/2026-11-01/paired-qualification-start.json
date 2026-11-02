@@ -1,0 +1,36 @@
+{
+  "scope": "Initial observation of paired charger, Wi-Fi and Docker qualification; full duration not yet verified",
+  "status": "running",
+  "started_at": "2026-11-01T00:48:35.029835+00:00",
+  "native_required_hours": 24.1,
+  "independent_required_hours": 24,
+  "earliest_native_completion": "2026-11-02T00:54:25.794259+00:00",
+  "native_initial_report": {
+    "status": "running",
+    "required_hours": 24.1,
+    "elapsed_seconds": 63.329999999999984,
+    "samples": 2,
+    "complete_samples": 2,
+    "failures": [],
+    "scope": "Local device/charger/app soak; independent Wi-Fi reachability and other release gates are separate"
+  },
+  "host_initial_report": {
+    "status": "running",
+    "required_hours": 24.0,
+    "elapsed_seconds": 60.94,
+    "samples": 2,
+    "complete_samples": 2,
+    "failures": [],
+    "scope": "Independent host SSH/HTTP plus device/charger/application soak; other release gates are separate",
+    "external_http_failures": []
+  },
+  "battery_percent": 77,
+  "battery_current_ua": -1060632,
+  "battery_temperature_c": 24.7,
+  "cpu_temperature_c": 51.7,
+  "actual_dcp_verified": true,
+  "ext4_errors": 0,
+  "required_services_active": true,
+  "formal_24h_passed": false,
+  "other_release_gates_separate": true
+}

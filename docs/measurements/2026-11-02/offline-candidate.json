@@ -1,0 +1,20 @@
+{
+  "status": "offline_validated_hardware_pending",
+  "build_result": {
+    "returncode": 0,
+    "finished_at": "2026-11-01T17:44:12.958781+00:00"
+  },
+  "checked_product_inputs": 186,
+  "small_output_checks": {
+    "boot.img": true,
+    "boot-diagnostic.img": true,
+    "boot-diagnostic-usb-debug.img": true,
+    "msm8996-xiaomi-gemini.dtb": true
+  },
+  "boot_sha256": "bb8c480f546217ae8adbb9760f1df64771d2287ccd358df6a0f5edf2fef03326",
+  "diagnostic_sha256": "f65c5722616bf21eff0bfdc8a1eeb74d41df4587e09f65fbc990aa5ce821d82f",
+  "source_patch_sha256": "55c830f7a52eec1442b7dd807756a6047ecb47fecb8d3076e500b999b74c12e8",
+  "generic_rootfs_hardware_verified": false,
+  "fastboot_bulk_transfer_recovery_pending": true,
+  "stable_qualified": false
+}

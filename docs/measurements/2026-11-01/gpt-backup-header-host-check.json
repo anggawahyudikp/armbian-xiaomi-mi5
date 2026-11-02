@@ -1,0 +1,27 @@
+{
+  "scope": "Host-only correction of a GPT-metadata fixture; no device table repair or complete device backup",
+  "status": "host_fixture_crc_correction_verified",
+  "observed_at": "2026-11-01T06:54:10.058961+00:00",
+  "device_label": "sdf",
+  "logical_sector_bytes": 4096,
+  "stored_original_backup_header_crc32": "00000000",
+  "computed_backup_header_crc32": "4fe3e983",
+  "header_bytes": 92,
+  "primary_and_backup_entry_arrays_identical": true,
+  "common_header_fields_consistent": true,
+  "only_changed_bytes": {
+    "offset": 33550352,
+    "count": 4,
+    "field": "backup header CRC32"
+  },
+  "corrected_backup_header_crc_valid": true,
+  "independent_fdisk_returncode": 0,
+  "independent_fdisk_backup_corruption_warning_after": false,
+  "original_metadata_regions_unchanged": 12,
+  "fixture_is_flashable_device_backup": false,
+  "phone_partition_table_written": false,
+  "phone_repair_hardware_verified": false,
+  "partition_table_write_authorized": false,
+  "userdata_backup_verified": false,
+  "formal_24h_passed": false
+}

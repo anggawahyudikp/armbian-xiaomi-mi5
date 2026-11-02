@@ -1,0 +1,15 @@
+[Unit]
+Description=Bounded recovery of the configured server Wi-Fi profile
+After=NetworkManager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/mi5-wifi-recover
+TimeoutStartSec=100
+RuntimeDirectory=mi5-wifi-recovery
+RuntimeDirectoryMode=0700
+RuntimeDirectoryPreserve=yes
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes

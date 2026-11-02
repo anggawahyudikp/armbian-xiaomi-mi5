@@ -1,0 +1,32 @@
+{
+  "scope": "Physical Power key/backend observation on the current charger boot; Home, visual confirmation and final revised candidate remain separate",
+  "status": "power_key_backend_passed_home_pending",
+  "observed_at": "2026-11-01T09:27:19.570616+00:00",
+  "observer_ended_normally": true,
+  "observer_process_ended": true,
+  "same_boot_verified": true,
+  "power_short_press_count": 4,
+  "power_sleep_wake_cycles_verified": 2,
+  "power_press_duration_seconds": [
+    0.1104,
+    0.1394,
+    0.1694,
+    0.1099
+  ],
+  "backlight_state_latency_seconds": [
+    0.1147,
+    0.1435,
+    0.1738,
+    0.113
+  ],
+  "local_http_checks": 294,
+  "local_http_failures": 0,
+  "independent_ssh_http_samples_in_observation": 10,
+  "independent_failures": 0,
+  "home_key_events_seen": 0,
+  "home_wake_verified": false,
+  "user_visual_confirmation_received": false,
+  "qualification_restarted": false,
+  "full_24h_passed": false,
+  "new_candidate_hardware_verified": false
+}

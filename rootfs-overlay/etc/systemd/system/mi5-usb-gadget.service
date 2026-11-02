@@ -1,0 +1,19 @@
+[Unit]
+Description=Mi 5 USB network and serial management
+After=local-fs.target sys-kernel-config.mount NetworkManager.service armbian-ramlog.service
+Wants=sys-kernel-config.mount
+Before=serial-getty@ttyGS0.service mi5-usb-dhcp.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStartPre=-/bin/systemctl stop serial-getty@ttyGS0.service
+ExecStart=/usr/local/sbin/mi5-usb-gadget start
+ExecStartPost=/usr/local/sbin/mi5-usb-gadget serial-ready
+ExecStop=/usr/local/sbin/mi5-usb-gadget stop
+ExecStopPost=/usr/local/sbin/mi5-usb-gadget serial-ready
+TimeoutStartSec=45
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,72 @@
+{
+  "scope": "Existing periodic health samples plus one read-only service resource baseline during the ongoing charger qualification",
+  "status": "interim_observation_collected",
+  "observed_at": "2026-11-01T05:43:57.804312+00:00",
+  "health_samples": 145,
+  "health_sample_span_seconds": 17621.29,
+  "memory_total_kib": 2747796,
+  "memory_available_kib_first_last_min_max": [
+    2365216,
+    2315536,
+    2271928,
+    2365216
+  ],
+  "median_memory_available_kib_first_last_ten": [
+    2344456.0,
+    2314666.0
+  ],
+  "maximum_sampled_swap_used_kib": 0,
+  "kernel_oom_kill_count_current_boot": 0,
+  "root_free_bytes_first_last": [
+    21330939904,
+    21330231296
+  ],
+  "root_inode_free": 1576348,
+  "root_inode_total": 1627296,
+  "service_baseline": {
+    "NetworkManager.service": {
+      "resident_kib": 20336,
+      "peak_resident_kib": 20336,
+      "threads": 3,
+      "open_file_descriptors": 27,
+      "cgroup_memory_current_bytes": 16650240,
+      "cgroup_oom_kills": 0
+    },
+    "ssh.service": {
+      "resident_kib": 8940,
+      "peak_resident_kib": 8940,
+      "threads": 1,
+      "open_file_descriptors": 5,
+      "cgroup_memory_current_bytes": 5615616,
+      "cgroup_oom_kills": 0
+    },
+    "docker.service": {
+      "resident_kib": 73024,
+      "peak_resident_kib": 78648,
+      "threads": 14,
+      "open_file_descriptors": 27,
+      "cgroup_memory_current_bytes": 111521792,
+      "cgroup_oom_kills": 0
+    },
+    "containerd.service": {
+      "resident_kib": 43700,
+      "peak_resident_kib": 46160,
+      "threads": 10,
+      "open_file_descriptors": 17,
+      "cgroup_memory_current_bytes": 78532608,
+      "cgroup_oom_kills": 0
+    },
+    "mi5-console.service": {
+      "resident_kib": 13128,
+      "peak_resident_kib": 13128,
+      "threads": 1,
+      "open_file_descriptors": 10,
+      "cgroup_memory_current_bytes": 18042880,
+      "cgroup_oom_kills": 0
+    }
+  },
+  "service_resource_growth_comparison_complete": false,
+  "memory_leak_absence_established": false,
+  "qualification_restarted": false,
+  "full_24h_passed": false
+}

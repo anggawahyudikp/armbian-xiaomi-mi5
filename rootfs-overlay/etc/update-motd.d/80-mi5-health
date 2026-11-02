@@ -1,0 +1,3 @@
+#!/bin/sh
+# Login only; never redraw over the terminal or wake the display.
+/usr/local/sbin/mi5-doctor --private 2>/dev/null || true

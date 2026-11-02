@@ -1,0 +1,16 @@
+[Unit]
+Description=Record bounded Mi 5 health evidence
+After=local-fs.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/mi5-doctor --record
+TimeoutStartSec=30
+UMask=0077
+Nice=10
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/mi5-health
+StateDirectory=mi5-health
+StateDirectoryMode=0700

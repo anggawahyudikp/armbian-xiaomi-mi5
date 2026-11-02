@@ -1,0 +1,119 @@
+{
+  "scope": "Installed charger-status base image plus the two runtime USB-console corrections; newer generic rootfs first boot remains pending",
+  "kernel_release": "7.0.0-gemini-lk-clockrtc-chgstatus",
+  "boot_sha256": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+  "tested_root_uuid": "031ca192-f985-4a51-9248-0fec3845129e",
+  "battery_policy": {
+    "stop_at_or_below_percent": 5,
+    "user_explicitly_overrode_previous_30_percent_preflight": true,
+    "guard_active_after_tests": true,
+    "actual_floor_stop_triggered": false,
+    "latest_observed_percent": 7,
+    "automatic_shutdown": false
+  },
+  "cpu_memory": {
+    "passed": true,
+    "elapsed_seconds": 300.8059849610004,
+    "workers": 2,
+    "memory_per_worker_mib": 128,
+    "worker_reports": [
+      {
+        "iterations": 988,
+        "elapsed": 300.2049744770002,
+        "memory_mib": 128,
+        "passed": true
+      },
+      {
+        "iterations": 994,
+        "elapsed": 300.10405718599986,
+        "memory_mib": 128,
+        "passed": true
+      }
+    ],
+    "max_cpu_c": 71.6,
+    "max_battery_temp_c": 25.5,
+    "minimum_battery_percent": 6,
+    "cpu_acceptance_limit_c": 85,
+    "earlier_conservative_70_c_diagnostic_limit_would_still_be_exceeded": true
+  },
+  "application_storage": {
+    "passed": true,
+    "checks": {
+      "hardening_and_cgroup_configuration": true,
+      "bridge_dns_http": true,
+      "restart_persistent_counter": true,
+      "stopped_application_backup_restore": true,
+      "sqlite_wal_crash_rollback_integrity": true,
+      "application_still_responds": true
+    },
+    "restored_snapshot_counter": 18,
+    "sqlite_backup_sha256": "707070dd9cf0cafa9acd308341bfd828bc427d9558f0cf321caf112b9670fe15",
+    "fresh_offdevice_sqlite_integrity_ok": true,
+    "offdevice_committed_rows": 16
+  },
+  "display": {
+    "physical_buttons_verified": false,
+    "rendered_text_verified": false,
+    "backlight_before": {
+      "backlight": 0
+    },
+    "sleep_backlight": {
+      "backlight": 0
+    },
+    "wake_backlight": {
+      "backlight": 819
+    },
+    "display_control_sysfs_cycle_passed": true,
+    "application_available_during_cycle": true,
+    "cpu_availability_preserved": true
+  },
+  "independent_http": {
+    "samples": 161,
+    "failed_samples": 1,
+    "timeout_seconds": 3,
+    "first_sample_after_cpu_start_seconds": 20.419532,
+    "failure_details": [
+      {
+        "timestamp": "2026-11-02T05:11:14.701203+00:00",
+        "elapsed": 146.129927588001,
+        "ok": false,
+        "error": "URLError: <urlopen error timed out>"
+      }
+    ],
+    "cause_established": false,
+    "full_cpu_interval_independent_coverage": false,
+    "full_24h_passed": false
+  },
+  "wifi_throughput": {
+    "directions": {
+      "phone_to_host": {
+        "received_bits_per_second": 5213467.70062018,
+        "received_mb_per_second": 0.6516834625775225,
+        "seconds": 10.056416,
+        "bytes": 6553600
+      },
+      "host_to_phone": {
+        "received_bits_per_second": 4701714.74580598,
+        "received_mb_per_second": 0.5877143432257474,
+        "seconds": 10.000491,
+        "bytes": 5877432
+      }
+    },
+    "required_mb_per_second": 10,
+    "target_met": false
+  },
+  "post_load": {
+    "kernel_taint": 0,
+    "ext4_errors": 0,
+    "root_fsync_write_verified": true,
+    "system_state": "running",
+    "failed_units": "",
+    "container_running": true,
+    "container_oom": false,
+    "local_http_ok": true,
+    "fatal_kernel_messages": []
+  },
+  "charger_only_qualification_passed": false,
+  "new_generic_first_boot_verified": false,
+  "stable_qualified": false
+}

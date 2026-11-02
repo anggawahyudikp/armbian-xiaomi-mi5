@@ -1,0 +1,30 @@
+{
+  "kernel_release": "7.0.0-gemini-lk-clockrtc-chgstatus",
+  "kernel_source_patch_sha256": "551dd600d95c42074813ce791fb51843fb867941475cfe55ef4670379efa01c4",
+  "new_root_uuid": "12e0d0d2-de08-4852-b9aa-04ee9e501229",
+  "offline_validation_passed": true,
+  "outputs": {
+    "boot.img": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+    "boot-diagnostic.img": "be0e2c3020d1e76d895bff82a6dc61fa5760da7046fee11a8f1993c8b42c55f3",
+    "boot-diagnostic-usb-debug.img": "86f0087f5bf5b328db29904a352884e16b58eaa4f29ef91ab56d7dcbda871b30",
+    "rootfs.ext4": "12dbe1cfff449b016b3f7e34156351f4904ff42e1e7e015523a2ca4254c894a2",
+    "rootfs.img": "f969b184ef22cd0bf59886963ba8aa95a7a79b412e1a6e2293cc6bc3a37cc2f9",
+    "armbian-xiaomi-mi5_0.1.0-preview.1_fastboot.zip": "8c64e33ceb2b2e55198a417d0fc602bfd04399cdc05ddbda7022280c43502aad",
+    "armbian-xiaomi-mi5_0.1.0-preview.1_twrp.zip": "2d1271235058af6e6240087988da119c6d2eef9da897686e0ba0a4a09724e7cc",
+    "kernel.config": "9cc4a120b016a1251b07c844f177b553762cc86f95f8b30914dfc95b300bb912",
+    "Image.gz": "abcb81a1eb2c6f8f10f6efbc25f9d312fa27b2a89de25798d508c33bd57308be",
+    "msm8996-xiaomi-gemini.dtb": "7b6e5be745a31a9e9300940a3c80ab51870d41e32d2e69a488ae04f260daf461"
+  },
+  "packager": "Bundled pinned mkbootimg.py; actual default-path build",
+  "runtime_identity": {
+    "scope": "Immutable release userspace and project configuration identity; not a generic-image first-boot test",
+    "checked": 38972,
+    "passed": true,
+    "mismatches": [],
+    "artifact_boot_sha256": "89575defeba33c1c400d0e8dbdddf5e8c0fd446564c3f23294cc587c6b8603f3",
+    "artifact_rootfs_tree_sha256": "09185f48500507735f425b9a82fdc0f3016e10097b28c8fa83739cfd2636872f"
+  },
+  "runtime_alignment": "Three config files aligned after preserving original differences; all selected file identities then matched",
+  "hardware_first_boot_verified": false,
+  "stable_qualified": false
+}

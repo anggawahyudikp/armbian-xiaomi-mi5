@@ -1,0 +1,80 @@
+{
+  "observed_at": "2026-10-31T18:28:49.168640+00:00",
+  "scope": "Physical Mi 5 USB passthrough to Windows 11 Enterprise Evaluation under QEMU/KVM; no native-PC or Windows 10 claim",
+  "os": {
+    "Caption": "Microsoft Windows 11 Enterprise Evaluation",
+    "Version": "10.0.26300",
+    "BuildNumber": "26300",
+    "OSArchitecture": "64-bit"
+  },
+  "full_build_from_cmd_ver": "10.0.26300.9457",
+  "evaluation_license_expired_notice_observed": true,
+  "secure_boot": true,
+  "tpm": {
+    "TpmPresent": true,
+    "TpmReady": true,
+    "TpmEnabled": true
+  },
+  "mode_order": [
+    "ncm",
+    "rndis"
+  ],
+  "modes": {
+    "ncm": {
+      "device_revision": "0x0103",
+      "driver": {
+        "DeviceName": "UsbNcm Host Device",
+        "DriverProviderName": "Microsoft",
+        "DriverVersion": "10.0.26100.9444",
+        "IsSigned": true
+      },
+      "os_descriptor_cache_bytes": [
+        0,
+        0
+      ],
+      "dhcp_passed": true,
+      "ssh_plain_exit_code": 0,
+      "ssh_pty_exit_code": 0,
+      "application_counter": 6649,
+      "controlled_default_route_preserved": true,
+      "usb_default_route_absent": true,
+      "usb_ipv4_dns_empty": true,
+      "serial_login_prompt_observed": true
+    },
+    "rndis": {
+      "device_revision": "0x0102",
+      "driver": {
+        "DeviceName": "Remote NDIS Compatible Device",
+        "DriverProviderName": "Microsoft",
+        "DriverVersion": "10.0.26100.1",
+        "IsSigned": true
+      },
+      "os_descriptor_cache_bytes": [
+        1,
+        205
+      ],
+      "dhcp_passed": true,
+      "ssh_plain_exit_code": 0,
+      "ssh_pty_exit_code": 0,
+      "application_counter": 6664,
+      "controlled_default_route_preserved": true,
+      "usb_default_route_absent": true,
+      "usb_ipv4_dns_empty": true,
+      "serial_login_prompt_observed": true
+    }
+  },
+  "route_baseline": "Temporary static route on isolated virtual Ethernet; not an Internet-connectivity test",
+  "custom_driver_or_policy_changes_used": false,
+  "qemu_modified_microsoft_descriptors": false,
+  "qemu_suppressed_remote_wakeup": false,
+  "phone_detached_after_test": true,
+  "usb_device_acl_restored": true,
+  "temporary_test_keys_removed": true,
+  "same_phone_os_boot_retained": true,
+  "linux_usb_health_followup_passed": true,
+  "battery_percent_after_tests": 16,
+  "charger_test_passed": false,
+  "fresh_install_passed": false,
+  "usb_validation_passed": true,
+  "package_payload_validation_passed": true
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Retrospective sampled laptop USB SDP evidence; not DCP or formal 24-hour qualification",
+  "health_samples": 275,
+  "sampled_span_hours": 9.678,
+  "maximum_sample_gap_seconds": 130.64,
+  "median_sample_gap_seconds": 129.02,
+  "sampled_services_all_active": true,
+  "battery_first_last_percent": [
+    81.0,
+    35.0
+  ],
+  "cpu_max_c": 55.9,
+  "battery_max_c": 25.2,
+  "wifi_rssi_min_max_dbm": [
+    -62.0,
+    -42.0
+  ],
+  "lcd_automatic_timeout_seconds": 300,
+  "lcd_sleep_start_utc": "2026-10-31T12:50:24.867080+00:00",
+  "lcd_wake_end_utc": "2026-10-31T12:51:03.416829+00:00",
+  "independent_http_samples_while_asleep": 4,
+  "independent_http_while_asleep_passed": true,
+  "physical_buttons_verified": false,
+  "formal_24h_passed": false
+}

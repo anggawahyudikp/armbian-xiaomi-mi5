@@ -1,0 +1,39 @@
+{
+  "scope": "Diagnosis of an initial test-fixture command error; supported BusyBox HTTP and image-native Docker clients verified",
+  "status": "fixture_command_corrected",
+  "observed_at": "2026-11-01T05:24:02.612209+00:00",
+  "busybox_version": "BusyBox v1.35.0 (Debian 1:1.35.0-4+deb12u1+b1) multi-call binary.",
+  "busybox_sha256": "61781806ad3650b0b9d2b3fc6971e2bffdca967af1a95375abd0578bafff14fb",
+  "same_binary_in_rootfs_and_initramfs": true,
+  "timeout_option_advertised_by_help": false,
+  "unsupported_timeout_option_crash_reproduced": true,
+  "qemu_cases": [
+    {
+      "case": "default",
+      "returncode": 0
+    },
+    {
+      "case": "stdout_separate",
+      "returncode": 0
+    },
+    {
+      "case": "stdout_joined",
+      "returncode": 0
+    },
+    {
+      "case": "with_timeout",
+      "returncode": -11
+    },
+    {
+      "case": "original_client",
+      "returncode": -11
+    }
+  ],
+  "phone_supported_http_returncode": 0,
+  "parent_process_deadline_seconds": 5,
+  "image_native_client_network_checks_passed": true,
+  "first_failed_attempt_retained": true,
+  "candidate_binary_or_configuration_changed": false,
+  "upstream_invalid_option_crash_mechanism_fully_determined": false,
+  "full_24h_passed": false
+}

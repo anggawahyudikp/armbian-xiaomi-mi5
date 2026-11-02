@@ -1,0 +1,12 @@
+[Unit]
+Description=Xiaomi Mi 5 Battery Guard and UPS Daemon
+After=basic.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/mi5-power-guard.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

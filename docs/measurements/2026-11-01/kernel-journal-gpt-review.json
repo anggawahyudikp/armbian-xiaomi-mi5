@@ -1,0 +1,76 @@
+{
+  "scope": "Read-only boot/runtime kernel, journal consistency and GPT metadata audit during the existing qualification",
+  "status": "boot_findings_require_follow_up",
+  "observed_at": "2026-11-01T06:20:18.081112+00:00",
+  "kernel_runtime_window_seconds": [
+    73.06,
+    19715.49
+  ],
+  "kernel_runtime_records": 208,
+  "runtime_warning_or_error_records": 0,
+  "boot_warning_records": 59,
+  "boot_error_records": 18,
+  "current_kernel_taint": 512,
+  "clock_warning": "fd_ahb_clk status stuck at on; clk_disable_unused call trace",
+  "boot_warning_disposition_complete": false,
+  "journal": {
+    "verify_returncode": 0,
+    "verified_file_count": 17,
+    "current_persistent_header_state": 0,
+    "current_runtime_header_state": 1,
+    "boot_unclean_message_seen": true,
+    "previous_normal_boot_unclean_message_seen": true,
+    "cause_confirmed": false,
+    "log_files_deleted_or_repaired": false
+  },
+  "gpt": {
+    "sda": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": true,
+      "backup_array_crc_valid": true
+    },
+    "sdb": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": true,
+      "backup_array_crc_valid": true
+    },
+    "sdc": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": true,
+      "backup_array_crc_valid": true
+    },
+    "sdd": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": true,
+      "backup_array_crc_valid": true
+    },
+    "sde": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": true,
+      "backup_array_crc_valid": true
+    },
+    "sdf": {
+      "primary_header_crc_valid": true,
+      "primary_array_crc_valid": true,
+      "backup_header_crc_valid": false,
+      "backup_array_crc_valid": true
+    }
+  },
+  "invalid_backup_header_device": "sdf",
+  "independent_util_linux_confirmation": true,
+  "independent_check_logical_sector_bytes": 4096,
+  "first_default_sector_attempt_conclusive": false,
+  "first_attempt_retained": true,
+  "metadata_regions_copied_and_hash_verified": 12,
+  "metadata_backup_is_full_device_or_userdata_backup": false,
+  "gpt_issue_preexists_project_proven": false,
+  "partition_table_written": false,
+  "partition_table_write_authorized": false,
+  "qualification_restarted": false,
+  "full_24h_passed": false
+}
