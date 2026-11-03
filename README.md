@@ -1,36 +1,37 @@
 # Armbian for Xiaomi Mi 5
 
+**Give your Xiaomi Mi 5 a second life as a Linux server.**
+
 Community Armbian port for **Xiaomi Mi 5** (`gemini`, Snapdragon 820 / MSM8996),
 using the stock LK bootloader and Debian Bookworm ARM64 userspace.
 
-[Documentation](docs/README.md) · [Source releases](https://github.com/anggawahyudikp/armbian-xiaomi-mi5/releases) · [Contributing](CONTRIBUTING.md)
+[Documentation](docs/README.md) · [Source releases](https://github.com/anggawahyudikp/armbian-xiaomi-mi5/releases) · [Contributing](CONTRIBUTING.md) · [Contributors](CONTRIBUTORS.md)
 
 This project turns a Mi 5 into a small server with a **Linux console on its LCD**,
 **Wi-Fi as the primary network**, and **USB network + serial management**.
 The public repository name is `armbian-xiaomi-mi5`; hardware identifiers remain
 `gemini` and `msm8996`. This is a community port, not official Armbian device support.
 
-## Status
+## First stable release
 
-**0.1.0 is qualified for the targeted Wi-Fi server scope.** Five consecutive
-USB reboots and five charger-runtime reboots passed. The operator confirmed
-Power/Home and visible Linux after each final USB boot. Generic onboarding,
-Docker package autostart, app/storage recovery and bounded CPU/RAM tests passed.
-See the [0.1.0 stability report](docs/stable-release-0.1.0.md) for evidence,
-version-only promotion, retained failures and untested paths.
+**Version 0.1.0 is our first stable release for lightweight, Wi-Fi-connected
+server workloads.** It is the result of extensive hardware bring-up, repeated
+real-device testing, and multiple rounds of debugging and refinement across
+boot, charging, networking, storage, USB management, and display controls.
 
-The release uses the existing battery and normal USB charging, with Wi-Fi as
-the uplink. Short transfers of 0.652 and 0.588 MB/s meet the user-revised minimum
-of 0.5 MB/s. The user removed the 24-hour gate; this is not a 24/7 service guarantee.
-Linux USB RNDIS/NCM passed; Windows 11 passed with the actual phone forwarded
-to QEMU. Native Windows PCs, Windows 10, physical USB Ethernet/LAN failover,
-TWRP installation and full-system restoration remain untested.
+The project brings an ARM64 Linux server, Docker support, Wi-Fi connectivity,
+and a working LCD console to the Snapdragon 820 platform. The release uses the
+existing battery and normal USB charging, with Wi-Fi as its primary uplink.
 
-The stable package promotion changes only version metadata. Kernel, boot and
-functional rootfs contents match the hardware-tested candidate. No additional
-flash of the metadata-only image is claimed. Original phone backups remain
-private. Public source is available on GitHub; firmware-equipped binary images are not
-distributed. See [source distribution](docs/open-source-publication.md).
+**Tested on real hardware:** five consecutive USB reboots and five
+charger-powered runtime reboots passed, alongside Docker persistence,
+application backup and restore, Wi-Fi recovery, and bounded CPU/RAM testing.
+Power and Home controls were physically verified after every final USB reboot.
+
+See the [0.1.0 stability report](docs/stable-release-0.1.0.md) for the measured
+results and validation scope. The [source release](docs/open-source-publication.md)
+includes build configuration, host tests, and English documentation; prepare
+local firmware inputs before building installation images.
 
 ## Use the device
 
@@ -124,3 +125,31 @@ explicit: `scripts/publish-release.sh --prepare` generates release notes locally
 `--publish OWNER/REPO` publishes a prerelease only when intentionally requested.
 
 [Stability criteria, diagnostics and outstanding hardware tests](docs/stability-plan.md)
+
+## Validation and known limitations
+
+Version 0.1.0 is stable for the tested lightweight Wi-Fi server scope described
+above. Short transfers of 0.652 and 0.588 MB/s meet the user-revised minimum of
+0.5 MB/s. The 24-hour acceptance gate was removed by the user; uninterrupted
+24/7 service has not been established. One independent HTTP connection timeout
+during load remains recorded in the stability report.
+
+Linux USB RNDIS/NCM passed. Windows 11 was tested with the actual phone forwarded
+to QEMU. Native Windows PCs, Windows 10, physical USB Ethernet/LAN failover,
+TWRP installation, and full-system restoration remain untested.
+
+The promotion to 0.1.0 changed version metadata only. Kernel, boot, and functional
+rootfs contents match the hardware-tested candidate; an additional flash of the
+metadata-only image is not claimed. Original backups and firmware inputs remain
+private, and firmware-equipped binary images are not distributed here.
+
+## Contributors and acknowledgments
+
+- **[AnggaWekape](https://github.com/anggawahyudikp)** — project maintainer,
+  hardware access, physical testing, and release decisions.
+- **Google Gemini** — acknowledged AI development assistant.
+- **OpenAI ChatGPT** — acknowledged AI development assistant.
+
+Thank you to the Linux, Armbian, and device-support communities whose work makes
+this port possible. See [CONTRIBUTORS.md](CONTRIBUTORS.md) for project credits
+and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for licensing attribution.
