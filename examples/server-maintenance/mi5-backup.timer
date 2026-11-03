@@ -1,0 +1,9 @@
+[Unit]
+Description=Daily Mi 5 backup while the laptop user session is available
+[Timer]
+OnCalendar=*-*-* 03:30:00
+RandomizedDelaySec=10m
+Persistent=true
+Unit=mi5-backup.service
+[Install]
+WantedBy=timers.target

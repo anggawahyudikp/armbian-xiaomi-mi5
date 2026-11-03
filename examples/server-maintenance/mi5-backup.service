@@ -1,0 +1,8 @@
+[Unit]
+Description=Verified private Mi 5 configuration and prepared app-export backup
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/mi5-backup
+UMask=0077
+NoNewPrivileges=yes
+TimeoutStartSec=360

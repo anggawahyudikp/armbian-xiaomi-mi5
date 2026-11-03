@@ -1,0 +1,12 @@
+[Unit]
+Description=Mi 5 LAN/USB host and Docker firewall policy
+Wants=docker.service
+After=docker.service
+PartOf=docker.service
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/local/sbin/mi5-server-firewall
+TimeoutStartSec=40
+[Install]
+WantedBy=multi-user.target

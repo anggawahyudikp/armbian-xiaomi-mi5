@@ -1,0 +1,7 @@
+Package: docker-compose-plugin
+Pin: origin download.docker.com
+Pin-Priority: 600
+
+Package: *
+Pin: origin download.docker.com
+Pin-Priority: -1

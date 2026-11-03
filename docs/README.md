@@ -20,6 +20,7 @@ local firmware inputs and the source-only GitHub release. SSH examples use root.
 | [Filesystem recovery](filesystem-recovery-2026-10-30.md) | Completed ext4 repair, verified boot order and remaining limitations |
 | [English language rollout](english-language-2026-10-30.md) | System/SSH change and validation |
 | [October progress history](stability-progress-2026-10-30.md) | Changes, measured results and outstanding tests |
+| [Post-install maintenance](server-maintenance-2026-11-03.md) | Security updates, Compose, log limits, SSH keys, firewall and laptop backup |
 | [Stability plan](stability-plan.md) | Release criteria, diagnostics and recovery |
 | [Flash guide](flash-guide.md) | Current prerequisites, diagnostics and installation |
 | [First Wi-Fi](first-wifi.md) | First login, Wi-Fi and SSH through USB console |
